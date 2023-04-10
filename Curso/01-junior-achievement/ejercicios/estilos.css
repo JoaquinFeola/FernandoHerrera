@@ -1,0 +1,23 @@
+/* ejercicios 11, 12, 13, 14 y 15 */
+* {
+	font-family: Courier;
+}
+p {
+	font-size: 25px;
+}
+
+img {
+	margin: 0 auto;
+}
+#container {
+	background-color: darkgray;
+	color: #fff;
+}
+
+h1 {
+	text-align: center;
+}
+
+.imagen {
+	text-align: center;
+}

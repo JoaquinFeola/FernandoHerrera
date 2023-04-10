@@ -1,0 +1,50 @@
+useRef:
+Estructura:
+const ref = useRef();
+Nos permite tener una referencia y que cada vez que cambie no se redibuje todo el componente nuevamente.
+Para poder usar este hook, por ejemplo seleccionar un input se puede usar el ref que es propio de React.
+
+import { useRef } from "react"
+
+export const FocusScreen = () => {
+
+    const inputRef = useRef();
+
+    return (
+    <>
+        <h1>Focus Screen</h1>
+        <hr />
+        <input 
+            ref={ inputRef }
+            type="text"
+            placeholder="Ingrese su nombre" 
+            className="form-control"
+        />
+
+    <button className="btn btn-primary mt-2">
+        Set focus
+    </button>
+
+    </>
+  )
+}
+IMPORTANTE!
+Se pueden usar distintos useRef para marcar distintas referencias en por ejemplo inputs.
+Podemos crear multiples useRef pero le tenemos que poner el ref al elemento con el nombre correspondiente del useRef:
+
+const ReferenciaHtml = useRef();
+const ReferenciaHtml2 = useRef();
+
+<input 
+  ref={ ReferenciaHtml }
+  type="text"
+  placeholder="Ingrese su nombre" 
+  className="form-control"
+/>
+
+<input 
+  ref={ ReferenciaHtml2 }
+  type="text"
+  placeholder="Ingrese su apellido" 
+  className="form-control"
+/>

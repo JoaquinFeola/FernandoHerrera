@@ -1,0 +1,25 @@
+useMemo:
+
+estructura
+useMemo(() => first, [second]);
+el useMemo nos memoriza/recuerda un valor, que a menos que las dependencias cambien no se va a volver a redibujar a menos que sea necesario.
+por ejemplo:
+const heavyStuff = ( iterationNumber = 100 ) => {
+    for ( let i = 0; i < iterationNumber; i++ ) {
+        console.log('Ahi vamos...');
+    };
+    return `${ iterationNumber } iteraciones realizadas `
+};  
+
+const memorizedValue = useMemo( () => heavyStuff(counter), [counter] );
+const [counter, setCounter] = useState(0);
+const [boleanValue, setBoleanValue] = useState(false);
+
+return (
+// en vez de poner el heavyStuff, ponemos el valor memorizado, que como lo dicen sus dependencias solamente se va a redibujar si el valor del counter cambia.
+<h4>{ memorizedValue }<h4/>
+<button onClick={() => {setCounter(counter + 1)}>Cambiar valor del counter +1<button/>
+<button onClick={() => setBoleanValue(!boleanValue)}>{ boleanValue }<button/>
+);
+
+conclusion, a no ser que haya un cambioo en el estado de counter el heavyStuff no se va a volver a renderizar, por mas que toquemos el boton se boleanValue no se va a redibujar el componente.

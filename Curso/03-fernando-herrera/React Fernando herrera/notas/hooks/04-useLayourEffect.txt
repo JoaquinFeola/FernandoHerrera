@@ -1,0 +1,14 @@
+useLayoutEffect:
+estructura:
+useLayoutEffect( () => {
+   first
+   return () => {
+   	second 
+   }
+}, [dependency] );
+
+la estructura y funcionamiento es casi lo mismo que el useEffect, pero hasta donde se pueda se recomienda (por React) que se use el useEffect
+
+
+
+buscar documentacion para entender mas al respecto.

@@ -1,0 +1,131 @@
+
+/* header y nav  */
+@media screen {
+	
+}
+.menu-btn-container, .menu-btn {
+	display: none;
+}
+
+.header {
+	background: linear-gradient(to left,#1B1586, #3D89E3);
+	color:#efe;
+	align-items: center;
+	padding: 0 16px;
+	box-shadow: 1px 5px 5px #777;
+}
+
+.nav {
+	background: linear-gradient(to left,#1B1586, #3D89E3);
+	/* padding: 0 10px;	 */
+	height: 50px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 30px;
+	position: sticky;
+	top: 0px;
+}
+
+.nav-link, i {
+	color:#fff;
+	text-decoration: none;
+	padding: 0 4px;
+	
+}
+
+.nav-link:hover > i, .nav-link:hover {
+	transition: all .5s;
+	color: #ccc;
+}  
+
+
+/* texto de trigonometria  y relacionados*/
+
+.trigonometria-cont {
+	display: flex;
+	flex-direction: column;
+}
+.trigonometria-cont > p {
+	margin: 0 20px;
+}
+
+.trigonometria-cont > h2 {
+	margin: 10px 0;
+	align-self: center;
+}
+
+.image-container-t {
+	margin: 40px 0;
+	display:flex;
+	justify-content: center;
+}
+.t-body {
+	font-size: larger;
+	font-weight: bold;
+}
+
+
+
+
+
+@media screen and (max-width:800px) and (min-width:300px){
+	/* nav header  */
+	.nav {
+		display: flex;
+		align-items: center;
+		justify-content: end;
+		flex-grow: 1;
+		/* padding: 5px; */
+		transition: all 1s;
+		margin: 0;
+		background: #118;
+		
+	}
+	
+	.header {
+		background: #118;
+		display: flex;
+		justify-content: start;
+		font-size: 14px;
+		align-items: center;
+		align-content: center;
+		padding: 0;
+		margin-bottom: 10px;
+		/* padding: 0 14px; */
+	}
+}
+.header > h1 {
+	padding: 0 10px;
+}
+/* boton del menu */
+/* clases de animacion navbar  */
+
+
+
+/* aca termina  */
+/* .menu-btn-container {
+	display: flex;
+	padding: 0 10px;
+}
+.menu-btn {
+	font-size: 25px;
+		display: block;
+		border: 0;
+		color: #fff;
+		background-color: #33a;
+		box-shadow: 0 0 5px #000;
+		height: 40px;
+		width: 40px;
+	}
+
+
+	/* contenido de la pagina  */
+
+.image-container-t {
+	margin: 40px 0;
+	display:flex;
+	justify-content: start;
+	overflow-x: scroll;
+} 
+

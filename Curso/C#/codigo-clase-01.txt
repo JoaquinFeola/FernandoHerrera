@@ -1,0 +1,148 @@
+// See https://aka.ms/new-console-template for more information
+
+//namespace cursoCsharp
+//{
+//    class Program
+//    {
+//        static void Main(string[] args)
+        //{
+            // C# proporciona 16 tipos de datos integrados o predefinidos para representar números enteros, decimales, 
+            // de punto flotante, valores booleanos, caracteres, cadenas de caracteres, y otros tipos. De estos, 13 se denominan simples.
+            // Entre los tipos numéricos tenemos: 
+            // ◾Ocho tipos enteros de varias longitudes, con y sin signo: 
+            // Enlace documentación oficial: https://docs.microsoft.com/es-es/dotnet/csharp/language-reference/builtin-types/integral-numeric-types
+
+            Console.WriteLine("Tipos numéricos:");
+            Console.WriteLine("-----------------------------------------------------------------------------");
+
+
+            //Tipo de .NET System.SByte --> Alias sbyte --> De -128 a 127 --> Entero de 8 bits con signo 
+            System.SByte occhoBitSigno = 125;
+            sbyte occhoBitSignoAlias = 125;
+            Console.WriteLine("Ejemplo de tipo sbyte: " + occhoBitSigno.ToString());
+            Console.WriteLine("Ejemplo de tipo sbyte alias: " + occhoBitSignoAlias.ToString());
+
+            //Tipo de .NET System.Byte -->Alias byte --> De 0 a 255 --> Entero de 8 bits sin signo
+            System.Byte ochoBitSinSigno = 245;
+            byte ochoBitSinSignoAlias = 123;
+            Console.WriteLine("Ejemplo de tipo byte: " + ochoBitSinSigno.ToString());
+            Console.WriteLine("Ejemplo de tipo byte alias: " + ochoBitSinSignoAlias.ToString());
+
+            //Tipo de .NET System.Int16 --> Alias short --> De -32 768 a 32 767 --> Entero de 16 bits con signo 
+            System.Int16 dieciseisBitConSigno = 20000;
+            short dieciseisBitConSignoAlias = 788;
+            Console.WriteLine("Ejemplo de tipo short: " + dieciseisBitConSigno.ToString());
+            Console.WriteLine("Ejemplo de tipo short alias: " + dieciseisBitConSignoAlias.ToString());
+
+
+            //Tipo de .NET System.UInt16 --> Alias ushort -->  De 0 a 65.535 --> Entero de 16 bits sin signo 
+            System.UInt16 dieciseisBitSinSigno = 54954;
+            ushort dieciseisBitSinSignoAlias = 45784;
+            Console.WriteLine("Ejemplo de tipo ushort: " + dieciseisBitSinSigno.ToString());
+            Console.WriteLine("Ejemplo de tipo ushort alias: " + dieciseisBitSinSignoAlias.ToString());
+
+            //Tipo de .NET System.Int32 --> Alias int  --> De -2.147.483.648 a 2.147.483.647 --> Entero de 32 bits con signo  
+            //(Es de los tipos númerico más utilizado normalmente)
+            System.Int32 treintaDosBitConSigno = 56789465;
+            int treintaDosBitConSignoAlias = 2147483647;
+            Console.WriteLine("Ejemplo de tipo int: " + treintaDosBitConSigno.ToString());
+            Console.WriteLine("Ejemplo de tipo int alias: " + treintaDosBitConSignoAlias.ToString());
+
+            //Tipo de .NET System.UInt32 --> Alias uint --> De 0 a 4.294.967.295 --> Entero de 32 bits sin signo
+            System.UInt32 treintaDosBitSinSigno = 4294967000;
+            uint treintaDosBitSinSignoAlias = 4294967000;
+            Console.WriteLine("Ejemplo de tipo uint: " + treintaDosBitSinSigno.ToString());
+            Console.WriteLine("Ejemplo de tipo uint alias: " + treintaDosBitSinSignoAlias.ToString());
+
+            //Tipo de .NET System.Int64 --> Alias long --> De -9.223.372.036.854.775.808 a 9.223.372.036.854.775.807 --> Entero de 64 bits con signo 
+            System.Int64 sesentayCuatroBitConSigno = -8223372036854775808;
+            long sesentayCuatroBitConSignoAlias = -8223372036854775808;
+            Console.WriteLine("Ejemplo de tipo long: " + sesentayCuatroBitConSigno.ToString());
+            Console.WriteLine("Ejemplo de tipo long alias: " + sesentayCuatroBitConSignoAlias.ToString());
+
+            //Tipo de .NET System.UInt64--> Alias ulong --> De 0 a 18.446.744.073.709.551.615--> Entero de 64 bits sin signo 
+            System.UInt64 sesentayCuatroBitSinSigno = 18446744073709551615;
+            ulong sesentayCuatroBitSinSignoAlias = 18446744073709551615;
+            Console.WriteLine("Ejemplo de tipo ulong: " + sesentayCuatroBitSinSigno.ToString());
+            Console.WriteLine("Ejemplo de tipo ulong alias: " + sesentayCuatroBitSinSignoAlias.ToString());
+
+            Console.WriteLine("-----------------------------------------------------------------------------");
+            Console.WriteLine("Tipos  punto flotante:");
+            Console.WriteLine("-----------------------------------------------------------------------------");
+
+            //◾Dos tipos de punto flotante: float y double.
+            //◾Un tipo de mayor precisión llamado decimal, que a diferencia de float y double, puede representar números con fracciones exactas.
+            //Lo que lo hace adecuado para cálculos financieros, monetarios, operaciones aritméticas, etc.
+            //Enlace documentación oficial: https://docs.microsoft.com/es-es/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types
+
+            //Tipo de .NET  System.Single--> Alias float --> De ±1,5 x 10^-45 a ±3,4 x 10^38--> 4 bytes
+            System.Single cuatroBytes = 10.45f;
+            float cuatroBytesAlias = float.MaxValue;
+            Console.WriteLine("Ejemplo de tipo float: " + cuatroBytes.ToString());
+            Console.WriteLine("Ejemplo de tipo float alias: " + cuatroBytesAlias.ToString());
+
+            //Tipo de .NET  System.Double--> Alias double --> De ±5,0 × 10^324 a ±1,7 × 10^308 --> 8 bytes
+            System.Double ochoBytes = 10.45;
+            double ochoBytesAlias = double.MinValue;
+            Console.WriteLine("Ejemplo de tipo double: " + ochoBytes.ToString());
+            Console.WriteLine("Ejemplo de tipo double alias: " + ochoBytesAlias.ToString());
+
+            //Tipo de .NET  System.Decimal--> Alias decimal --> De ±1,0 x 10^28 to ±7,9228 x 10^28 --> 16 bytes
+            //El tipo decimal tiene más precisión y un intervalo más reducido que float y double, es adecuado 
+            //para los cálculos financieros y monetarios.
+            System.Decimal dieciseisBytes = 10.45m;
+            decimal dieciseisBytesAlias = decimal.MinValue;
+            Console.WriteLine("Ejemplo de tipo decimal: " + dieciseisBytes.ToString());
+            Console.WriteLine("Ejemplo de tipo decimal alias: " + dieciseisBytesAlias.ToString());
+
+            //Un tipo de caracter unicode, llamado char. https://docs.microsoft.com/es-es/dotnet/csharp/language-reference/builtin-types/char
+            Console.WriteLine("-----------------------------------------------------------------------------");
+            Console.WriteLine("Tipo char:");
+            Console.WriteLine("-----------------------------------------------------------------------------");
+            System.Char caracter = 'b';
+            char caracterAlias = 'c';
+            Console.WriteLine("Ejemplo de tipo char: " + caracter.ToString().ToUpper());
+            Console.WriteLine("Ejemplo de tipo char alias: " + caracterAlias);
+
+            //Un tipo bool que representa dos valores, verdadero y falso. https://docs.microsoft.com/es-es/dotnet/csharp/language-reference/builtin-types/bool
+            Console.WriteLine("-----------------------------------------------------------------------------");
+            Console.WriteLine("Tipo booleano:");
+            Console.WriteLine("-----------------------------------------------------------------------------");
+            System.Boolean booleano = false;
+            bool booleanoAlias = true;
+            Console.WriteLine("Ejemplo de tipo bool: " + booleano);
+            Console.WriteLine("Ejemplo de tipo bool alias: " + booleanoAlias);
+
+
+            Console.WriteLine("-----------------------------------------------------------------------------");
+            Console.WriteLine(" Los 3 tipos restantes que quedan no son simples:");
+            Console.WriteLine("-----------------------------------------------------------------------------");
+
+            //object, que es el tipo base de todos los demás tipos.
+            System.Object objeto = new object();
+            object objetoAlias = 27.45;
+            Console.WriteLine("Ejemplo de tipo object: " + objeto.GetType().ToString());
+            Console.WriteLine("Ejemplo de tipo object alias: " + objetoAlias.GetType().ToString());
+
+            //string, el cual representa una cadena de caracteres Unicode.
+            System.String cadena = "Hola";
+            string cadenaAlias = "Adios";
+            Console.WriteLine("Ejemplo de tipo string: " + cadena);
+            Console.WriteLine("Ejemplo de tipo string alias: " + cadenaAlias);
+            // tipo var 
+            //Una variable local con tipo implícito es fuertemente tipada exactamente igual que si hubiera declarado el tipo, 
+            //solo que en este caso es el compilador 
+            //el que lo determina.
+            var tipoDinamico = "Soy una cadena de texto";
+            Console.WriteLine("Ejemplo de tipo : " + tipoDinamico);
+            var tipoDinamico3 = 9;
+            Console.WriteLine("Ejemplo de tipo : " + tipoDinamico3);
+            Console.ReadLine();
+
+        //}
+//    }
+//}
+
+
+
+

@@ -1,0 +1,252 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	 font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	 scroll-behavior: smooth;
+}
+
+/* nav responsive  */
+
+@media screen and (max-width: 800px) and (min-width:300px) {
+
+@keyframes menu_Navbar {
+	0% {
+		transform: translateX(200px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+	/* nav and header  */
+
+	.header {
+		display: flex;
+		background-color: #1B1586;
+		color:#efe;
+		padding: 0 10px;
+		align-items: center;
+		flex-grow: 1;
+		box-shadow: 1px 1px 6px #000;
+		position: sticky;
+		top: 0px;
+		margin-bottom: 20px;
+	}
+	
+	.nav {
+		display: flex;
+		align-items: center;
+		justify-content: end;
+		height: 50px;
+		flex-grow: 1;
+	}
+	
+	.nav-links {
+		position: fixed;
+		display: none;
+		background-color: #13a;
+		top: 50px;
+		right: 0;
+		box-shadow: -2px 3px 3px #444;
+		border-radius: 5px;
+	}
+	.nav-link > i {
+		margin: 0 10px;
+	}
+	.nav-link {
+		border-radius: 8px;
+		color: #fff;
+		text-decoration: none;
+		padding: 10px 10px;
+	}
+	.nav-link:hover {
+		transition: all 1s;
+		background-color: #1B1586;
+
+	}
+	.show {
+		animation: menu_Navbar .5s alternate ease-in;
+		animation-delay: 0s;
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.menu-btn {
+		font-size: 25px;
+		color: #fff;
+		background-color: #1B1586;
+		border: none;
+	}
+
+
+
+	/* estilos de contenido */
+
+	.trigonometria-cont > h2{
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	.trigonometria-cont > p {
+		margin-bottom: 20px;
+	}
+
+	.trigonometria-cont {
+		margin: 10px 20px;
+	}
+	.image-container-t {
+		display: flex;
+		overflow-x: scroll;
+	}
+	.image-container-t2  {
+		height: 350px;
+		overflow-x: scroll;
+		display: flex;
+	}
+
+	/* footer */
+
+	.footer {
+		background-color: #14f;
+		color: #fff;
+		box-shadow: 0 0 5px #000;
+	}
+
+	.copyright {
+		font-weight: bold;
+		user-select: none;
+		text-align: center;
+	}
+	.social {
+		display: block;
+		text-align: center;
+	}
+	.social > .social-c >a {
+		font-size: 36px;
+		width: 50px;
+		height: 50px;
+		border: 0;
+		color: #fff;
+		border-radius: 20%;
+		background-color: #14f;
+	}
+
+	#t-pitagoras {
+		text-decoration: line-through;
+	}
+}
+
+@media screen and (max-width:4800px) and (min-width:800px) {
+	.menu-btn {
+		display: none;
+	}
+
+	@keyframes menu-Decoration {
+		0% {
+			border: none;
+		}	
+		50% {
+			border-top: 1px solid #eee;
+		}
+		100% {
+			
+			border-top: 1px transparent #fff;
+		}
+	}
+	/* header y nav  */
+	.header {
+		display: flex;
+		background: linear-gradient(to right, #14f, #119);
+		color: #fff;
+		padding-left: 10px;
+		box-shadow: 0 0 5px #000;
+		position: sticky;
+		top: 0px;
+	}
+
+	.nav {
+		display: flex;
+		flex-grow: 1;
+		align-items: center;
+		justify-content: end;
+
+	}
+
+	.nav-link, i {
+		color: #fff;
+		text-decoration: none;
+		padding: 0 4px;
+	}
+
+	
+	.nav-link:hover {
+		transition: all 1s;
+		color: #ccc;
+		background-color: #1B1586;
+		animation: menu-Decoration 1.5s alternate-reverse infinite;
+	}
+
+		
+	.nav-link {
+		border-radius: 8px;
+		color: #fff;
+		text-decoration: none;
+		padding: 10px 10px;
+	}
+
+
+
+	/* estilos de contenido */
+
+	.trigonometria-cont > h2{
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	.trigonometria-cont > p {
+		margin-bottom: 20px;
+	}
+
+	.trigonometria-cont {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: 10px 20px;
+	}
+	.image-container-t {
+		display: flex;
+	}
+	.image-container-t2  {
+		height: 350px;
+		display: flex;
+	}
+
+	/* footer */
+
+	.footer {
+		background-color: #14f;
+		color: #fff;
+		box-shadow: 0 0 5px #000;
+	}
+
+	.copyright {
+		font-weight: bold;
+		user-select: none;
+		text-align: center;
+	}
+	.social {
+		display: block;
+		text-align: center;
+	}
+	.social > .social-c >a {
+		font-size: 36px;
+		width: 50px;
+		height: 50px;
+		border: 0;
+		color: #fff;
+		border-radius: 20%;
+		background-color: #14f;
+	}
+
+	#t-pitagoras {
+		text-decoration: line-through;
+	}
+}

@@ -1,0 +1,44 @@
+Ejercicio 1:
+Completar la etiqueta del h1
+
+Ejercicio 2:
+Colocar un ancho de 400 pixeles y un alto de 260 píxeles a la imágen de las cataratas
+
+Ejercicio 3:
+Hacer que el elemento link funcione
+
+Ejercicio 4:
+Colocar un encabezado que diga "Cataratas del Iguazú" al párrafo que habla de ellas
+
+Ejercicio 5:
+Agregar un salto de linea en medio del párrafo
+
+Ejercicio 6:
+Agregar color blueviolet a este párrafo en html
+
+Ejericico 7: 
+Generar un borde con esos valores
+
+Ejercicio 8:
+Convertir esta imágen en un link que nos lleve a https://iguazuargentina.com/es/index
+
+Ejercicio 9:
+Convertir a esta lista en una lista ordenada
+
+Ejercicio 10:
+Colocar un id a este div
+
+Ejercicio 11:
+Todos los párrafos deben tener 25 pixeles de tamaño de fuente
+
+Ejercicio 12:
+Todas las imágenes deben estar alineadas al centro
+
+Ejercicio 13:
+El footer debe tener color de fondo darkgray y letras blancas
+
+Ejercicio 14:
+Alinear el h1 al centro, desde la hoja de estilos
+
+Ejercicio 15:
+Utilizar el selector univeral para aplicar una fuente courier

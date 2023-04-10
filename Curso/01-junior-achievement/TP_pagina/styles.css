@@ -1,0 +1,191 @@
+/* 
+header and nav
+*/
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 16;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+
+  text-shadow: 1px 4px 6px #154;
+}
+.header{
+  /* background: linear-gradient(to right, #171, #192, #1b4); */
+  background-image: url(images/background.jpg);
+  background-repeat: no-repeat;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 1px 1px 10px black;
+  margin-bottom: 35px;
+  color: #fff;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-grow: 1;
+  padding: 5px;
+  height: 35px;
+
+  transition: all 1s;
+}
+
+.nav-links-container a, i {
+  color: #fff;
+  font-size: 17px;
+  font-weight: lighter;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.nav-links-container a:hover {
+  border-top: 1px solid #fff;
+  font-size: 18px;
+  transition: all 0.5s;
+}
+
+.menu-btn {
+  display: none;
+}
+
+
+#planta_logo {
+  width: 50px;
+}
+/* text  */
+.text-container h2 {
+	text-align: center;
+  margin: 40px;
+  font-size: 50px;
+}
+.text-container {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+  font-size: 22px;
+}
+.h3-mejora {
+  margin: 10px 40px;
+  font-size: 50px;
+  color: #161;
+  text-align: center;
+  font-family: 'Kanit', sans-serif;
+  text-shadow: 4px 1px 4px #174;
+
+}
+
+.text-sale-container {
+  margin: 20px;
+  font-size: 18px;
+}
+/* cards */
+.flex {
+  display: flex;
+}
+
+
+.card-container-sales {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+ 
+}
+.cards-container {
+  flex-direction: column;
+  margin: 20px;
+}
+
+
+.card { 
+  margin: 20px;
+
+}
+
+/* footer */
+.footer {
+  height: 80px;
+  background-color: #174;
+  color: #fff;
+}
+
+.inormation-video {
+  display: flex;
+  justify-content: center;
+}
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+@media  screen and (max-width:870px) {
+  .nav-links-container {
+    display: none;
+  }
+  .nav {
+  align-items: center;
+  align-content: center;
+  }
+  .menu-btn {
+    display: block;
+    border: 0;
+    color: #fff;
+  }
+  .header {
+  position: sticky;
+  top: 0px;
+  
+  }
+  .flex {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+  .offcanvas-title {
+    color: #000;
+    text-shadow: none;
+    font-size: 45px;
+  }
+
+  .image-logo-off {
+    width: 60px;
+  }
+  .text-container {
+    margin: 10px;
+  }
+
+  .offcanvas-body {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    justify-content: start;
+
+    padding: 10px;
+    
+  }
+  .offcanvas-body > a {
+    text-decoration: none;
+    color: #000;
+    text-shadow: none;
+    width: 100%;
+  }
+  .offcanvas-body > a:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #733;
+    transition: all 1s;
+  }
+  .offcanvas-body > i {
+    display: none;
+  }
+
+
+}

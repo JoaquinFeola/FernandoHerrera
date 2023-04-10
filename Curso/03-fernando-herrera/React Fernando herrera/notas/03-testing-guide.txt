@@ -1,0 +1,12 @@
+El testing en vite y como preparlas, que configuraciones cambiar?
+
+Necesitamos:
+- Instalar jest por medio del npm/yarn...
+- agregamos en el package.json:
+    "scripts": {
+      "test": "jest"
+     },
+- agregamos un archivo por ejemplo demo.test.js
+- en ese archivo colocamos una prueba, por ejemplo: test('esta prueba no tiene que fallar', () => {} ) 
+- npm run test para probar las pruebas
+

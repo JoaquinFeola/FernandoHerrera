@@ -1,0 +1,48 @@
+useReducer:
+estructura
+	estado                     (reducer, initialState)
+const [state, dispatch] = useReducer(first, second);
+
+por ejemplo					
+const todoReducer = ( initialState = {} , action, init ) => {
+
+    switch ( action.type ) {
+        case '[TODO] Add Todo':
+            return [...initialState, action.payload];
+    
+        default:
+            return initialState;
+    }
+
+};
+const [state, dispatch] = useReducer(todoReducer, initialState);
+
+    const handleNewTodo = ( todo ) => {
+        const action = {
+            type: '[TODO] Add Todo',
+            payload: todo,
+        }
+        dispatchTodos(action)
+    };
+
+
+    const onFormSubmit = (e) => {
+        e.preventDefault();
+        if ( description.length <= 1 ) return;
+
+
+        const newTodo = {
+            id: new Date().getTime() * 2,
+            done: false,
+            description: description,
+        };
+
+        onNewTodo(newTodo);
+        onResetForm();
+    }
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+C:\Users\Joaco\Desktop\Estudios y webs\Curso\C#\CursoProgramacion\CursoProgramacion\bin\Debug\net6.0-windows\CursoProgramacion.exe
+C:\Users\Joaco\Desktop\Estudios y webs\Curso\C#\CursoProgramacion\CursoProgramacion\bin\Debug\net6.0-windows\CursoProgramacion.deps.json
+C:\Users\Joaco\Desktop\Estudios y webs\Curso\C#\CursoProgramacion\CursoProgramacion\bin\Debug\net6.0-windows\CursoProgramacion.runtimeconfig.json
+C:\Users\Joaco\Desktop\Estudios y webs\Curso\C#\CursoProgramacion\CursoProgramacion\bin\Debug\net6.0-windows\CursoProgramacion.dll
+C:\Users\Joaco\Desktop\Estudios y webs\Curso\C#\CursoProgramacion\CursoProgramacion\bin\Debug\net6.0-windows\CursoProgramacion.pdb
+C:\Users\Joaco\Desktop\Estudios y webs\Curso\C#\CursoProgramacion\CursoProgramacion\obj\Debug\net6.0-windows\CursoProgramacion.csproj.AssemblyReference.cache
+C:\Users\Joaco\Desktop\Estudios y webs\Curso\C#\CursoProgramacion\CursoProgramacion\obj\Debug\net6.0-windows\CursoProgramacion.Form1.resources
+C:\Users\Joaco\Desktop\Estudios y webs\Curso\C#\CursoProgramacion\CursoProgramacion\obj\Debug\net6.0-windows\CursoProgramacion.csproj.GenerateResource.cache
+C:\Users\Joaco\Desktop\Estudios y webs\Curso\C#\CursoProgramacion\CursoProgramacion\obj\Debug\net6.0-windows\CursoProgramacion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Joaco\Desktop\Estudios y webs\Curso\C#\CursoProgramacion\CursoProgramacion\obj\Debug\net6.0-windows\CursoProgramacion.AssemblyInfoInputs.cache
+C:\Users\Joaco\Desktop\Estudios y webs\Curso\C#\CursoProgramacion\CursoProgramacion\obj\Debug\net6.0-windows\CursoProgramacion.AssemblyInfo.cs
+C:\Users\Joaco\Desktop\Estudios y webs\Curso\C#\CursoProgramacion\CursoProgramacion\obj\Debug\net6.0-windows\CursoProgramacion.csproj.CoreCompileInputs.cache
+C:\Users\Joaco\Desktop\Estudios y webs\Curso\C#\CursoProgramacion\CursoProgramacion\obj\Debug\net6.0-windows\CursoProgramacion.dll
+C:\Users\Joaco\Desktop\Estudios y webs\Curso\C#\CursoProgramacion\CursoProgramacion\obj\Debug\net6.0-windows\refint\CursoProgramacion.dll
+C:\Users\Joaco\Desktop\Estudios y webs\Curso\C#\CursoProgramacion\CursoProgramacion\obj\Debug\net6.0-windows\CursoProgramacion.pdb
+C:\Users\Joaco\Desktop\Estudios y webs\Curso\C#\CursoProgramacion\CursoProgramacion\obj\Debug\net6.0-windows\CursoProgramacion.genruntimeconfig.cache
+C:\Users\Joaco\Desktop\Estudios y webs\Curso\C#\CursoProgramacion\CursoProgramacion\obj\Debug\net6.0-windows\ref\CursoProgramacion.dll

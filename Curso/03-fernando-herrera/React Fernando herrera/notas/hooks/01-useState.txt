@@ -1,0 +1,11 @@
+los hooks react:
+para importar los hooks tendremos que import algo de react desestructurando y poniendo el nombre del hook.
+
+import { useState } from 'react';
+
+// El argumento que recibe el useState es el estado inicial del mismo:
+const [contador, setCounter] = useState(0);
+En la desestructuracion del useState recibe el "valor" que es practicamente el valor del useState y no se puede cambiar, y en el segundo parte se podria decir, recibe una funcion, en el que podremos hacer lo siguiente:
+
+setCounter( counter + 1 );
+// listo, con ese pequeño codigo ya tenemos una funcion para hacer un contador

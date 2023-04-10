@@ -1,0 +1,36 @@
+useCallback:
+estructura
+  useCallback(
+    () => {
+      first
+    },
+    [dependency],
+  )
+
+El useCallback sirve para memorizar funciones por ejemplo
+
+  const incrementFather = useCallback(
+    () => {
+      setCounter( counter + 1 );
+    },
+    [],
+  );
+
+// el componente del boton solo se va a renderizar una vez
+  a no ser que se haga lo siguiente:
+  const incrementFather = useCallback(
+    (args) => {
+      setCounter( (value) => value + 1 );
+    },
+    [],
+  );
+
+  return (
+    <>
+        <h1>useCallback Hook: { counter }</h1>
+        <hr />
+
+        <ShowIncrement increment={ incrementFather }/>
+    </>
+  )
+}

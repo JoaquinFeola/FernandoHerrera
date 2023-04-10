@@ -1,0 +1,26 @@
+el useReducer tiene la siguiente estructura:
+const [todos, dispatchTodos] = useReducer( todoReducer, initialState, init );
+useEffect(() => {
+ localStorage.setItem('todos', JSON.stringify(todos))
+}, [todos]);
+si nosotros tenemos este useEffect cada vez que recargamos la pagina se va a borrar el localStorage y va a aparecer con el valor principal de todos: [];
+
+pero para arreglar esto tenemos que usar la tercera funcion init:+
+
+const initialState = [];
+const init = () => {
+  return JSON.parse( localStorage.getItem( 'todos' )) || [];
+};
+// esta funcion de init nos va a retornar los objetos que hay en el localStorage;
+
+export const TodoApp = () => {
+ const [todos, dispatch] = useReducer( todoReducer, initialState, init );
+ useEffect(() => { 
+   localStorage.setItem( 'todos', JSON.stringify( todos )  )
+ }, []);
+}
+
+
+
+
+

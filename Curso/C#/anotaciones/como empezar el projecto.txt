@@ -1,0 +1,13 @@
+namespace cursoCsharp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+	// escribir codigo
+        }
+    }
+}
+
+
+una vez teniendo todo esto ya podemos iniciar nuestro proyecto.

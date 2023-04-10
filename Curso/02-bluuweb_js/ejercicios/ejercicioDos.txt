@@ -1,0 +1,58 @@
+const suma = (num, num2) => {
+  return parseInt(num) + parseInt(num2);
+};
+
+const division = (num, num2) => {
+  return parseInt(num) / parseInt(num2);
+};
+
+const multiplicacion = (num, num2) => {
+  return parseInt(num) * parseInt(num2);
+};
+
+const resta = (num, num2) => {
+  return parseInt(num) - parseInt(num2);
+};
+
+
+
+let cantidadUsos = parseInt(prompt("Cuantas veces vas a usar la calculadora?"));
+
+
+for (i = 0; i < cantidadUsos; i++) {
+let operacion = parseInt(
+prompt(`Que operacion desea realizar?
+1: resta 
+2: suma
+3: multiplicacion
+4: division`));
+
+  switch (operacion) {
+    case 1: {
+      let num1 = prompt("numero 1");
+      let num2 = prompt("numero 2");
+      let resultado = alert(resta(num1, num2));
+      break;
+    }
+    case 2: {
+      let num1 = prompt("numero 1");
+      let num2 = prompt("numero 2");
+      let resultado = alert(suma(num1, num2));
+      break;
+    }
+    case 3: {
+      let num1 = prompt("numero 1");
+      let num2 = prompt("numero 2");
+      let resultado = alert(multiplicacio(num1, num2));
+      break;
+    }
+    case 4: {
+      let num1 = prompt("numero 1");
+      let num2 = prompt("numero 2");
+      let resultado = alert(division(num1, num2));
+      break;
+    }
+    default:
+      alert("number not valid");
+  }
+}

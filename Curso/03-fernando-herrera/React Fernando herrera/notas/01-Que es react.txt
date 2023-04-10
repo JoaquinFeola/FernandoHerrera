@@ -1,0 +1,10 @@
+¿Qué es react?
+React es:
+.- Libreria
+.- Declarativa
+.- Eficiente
+.- Componentes
+.- Server-side con Node
+.- Aplicaciones moviles con react
+
+React es una libreria declarativa y eficiente que se basa en el trabajo de componentes.

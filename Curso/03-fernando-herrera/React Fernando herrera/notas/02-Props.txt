@@ -1,0 +1,20 @@
+las props react:
+
+export function FirstApp({ title }) {
+  return (
+    <>  
+        <h1>Joaquin</h1>
+        <p>Soy un subtitulo</p>
+    </>
+  );
+};
+
+las props que se desetructuraron como title van a venir del padre, en este caso el padre es el siguiente:
+    <React.StrictMode>
+        <FirstApp title=""/>
+    </React.StrictMode>
+
+para pasarle las props tenemos que en nuestro FirstApp ir poniendo nuevas propiedades a medida que lo necesitemos, por ejemplo <FirstApp name="Joaquin" />.
+
+Si nosotros necesitamos pasar un numero lo tenemos que hacer de la siguiente manera:
+<FirstApp subtitle={ 1234 } />

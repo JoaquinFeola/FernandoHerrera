@@ -1,0 +1,54 @@
+Que es un Reducer?
+1. Es una funcion comun y corriente.
+2. Debe ser una funcion pura.
+3. Debe de retornar un nuevo estado.
+4. Usualmente sólo recibe dos argumentos
+    - El valor incial (initialState) y la accion a ejecutar.
+
+ej:
+const todoReducer = () => {
+
+}
+
+Una funcion pura es:
+1. No debe de tener efectos secundarios.
+2. No debe de realizar tareas asíncronas.
+3. Debe de retornar siempre un estado nuevo.
+4. No debe de llamar localStorage o sessionStorage internamente.
+5. No debe de requerir mas que una accion que puede tener un argumento.
+
+ejemplo en codigo de un reducer:
+
+
+const initialState = [{
+    id: 1,
+    todo: 'Recolectar la piedra del Alma',
+    done: false,
+}];
+
+const todoReducer = ( state = initialState, action = {} ) => {
+    
+    if ( action.type  === '[TODO] add todo' ) {
+        return [...state, action.payload]
+    }
+
+
+    return state;
+};
+
+let todos = todoReducer();
+
+const newTodo = {
+    id: 2,
+    todo: 'Recolectar la piedra del poder',
+    done: false,
+};
+
+const addTodoAction = {
+    type: '[TODO] add todo',
+    payload: newTodo,
+};
+
+todos = todoReducer( todos, addTodoAction );
+console.log(todos);
+

@@ -1,0 +1,34 @@
+useEffect:
+
+estructura
+
+    useEffect(() => {
+      first
+    
+      return () => {
+        second
+      }
+    }, [dependency list])
+    
+El useEffect siempre se llama una vez como minimo.
+
+dependency list:
+
+arreglo vacio: [] solo una vez,
+
+useEffect( () => {
+console.log('state changed');
+}, [//dependencia de estado, cada vez que un formulario cambia, etc etc] );
+
+por ejemplo:
+---------------------------------------------------------
+const [formState, setFormState] = useState({
+	uuid: 'anscastring',
+	username: 'usernameData',
+});
+
+useEffect( () => {
+	console.log('estado cambiado y mostrado en consola')
+}, [formState] );
+
+en este ejemplo se va a disparar la funcion una vez al principio y cada vez que sea modificado el formState, o el estado solamente del formState. Debido a que es una dependencia de ese estado.

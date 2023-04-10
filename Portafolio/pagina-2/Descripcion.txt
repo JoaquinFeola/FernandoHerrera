@@ -1,0 +1,3 @@
+En la pagina encontraras una breve descripcion, e informacion sobre plantas y un video informativo.
+En la seccion de compras encontraras un catalago de compras que no funciona, porque no hay nada que vender son solo imagenes y una pagina de compras ilustrativa.
+Y por ultimo en la sección de contacto nos llevara al footer, donde encontraremos whatsapp, instagram y facebook que nos llevaran a la pagina oficial porque no hay cuentas a las cual linkear.

@@ -1,0 +1,23 @@
+Se utiliza el React.memo cuando...
+- Tu componente siempre regresa la misma salida.
+- Cuando las propiedades de tu componente nunca cambian.
+- Tu componente debe renderizar una gran cantidad de elementos, por ejemplo: una lista.
+
+Por ejemplo:
+
+export const Hijo = React.memo(({ numero, incrementar }) => {
+
+    console.log('  Me volví a generar :(  ');
+
+    return (
+        <button
+            className="btn btn-primary mr-3"
+            onClick={ () => incrementar( numero ) }
+        >
+            { numero }
+        </button>
+    )
+
+Este componente lo voy a usar para llamarlo en un componente padre entonces aqui si es importante usar el 'React.memo' para que no se redibuje todo el componente.
+
+

@@ -1,0 +1,17 @@
+Boleanos: true or false.
+
+Tipos numericos:
+hay 8 numericos eso te lo podes fijar en la pagina oficial de microsoft visua studio. Pero el mas usado es el int.
+Se usa de la siguiente manera:
+int number = 12;
+
+los float: 
+float numberWithComms = 1.4f // siempre con una f al final para aclarar que es un float.
+
+los decimales: 
+decimal numberWithDecimal = 1.33231m; // con una m al final para diferenciar los decimales.
+
+
+Tipo string:
+Los de tipo string se usan de la siguiente manera:
+String myName = "Joaquin";

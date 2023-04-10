@@ -1,0 +1,5 @@
+unit testing:
+Sirve para hacer pruebas de pequeñas funcionalidades de nuestra aplicacion.
+
+integration testing:
+Sirve para hacer pruebas para ver como reaccionan varias piezas en conjunto.
